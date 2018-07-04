@@ -1,0 +1,250 @@
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Bold.eot');
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Bold.woff2') format('woff2'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Bold.woff') format('woff'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Medium.eot');
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Medium.woff2') format('woff2'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Medium.woff') format('woff'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Light.eot');
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Light.woff2') format('woff2'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Light.woff') format('woff'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_UltraLight.eot');
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_UltraLight.woff2') format('woff2'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_UltraLight.woff') format('woff'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb.eot');
+    src: url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb.eot?#iefix') format('embedded-opentype'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb.woff2') format('woff2'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb.woff') format('woff'), url('http://localhost/stacademy/library/fonts/IRANSans/IRANSansWeb.ttf') format('truetype');
+}
+
+body {
+    font-size: 14px;
+    font-family: IRANSans, Tahoma, Arial, Helvetica, Sans-Serif;
+}
+.main{
+    padding-top: 50px;
+}
+
+.logo{
+    width: 360px;
+    position: relative;
+    transition: all .7s;
+}
+.logo_txt{
+    letter-spacing: 8px;
+    transition: all .7s;
+}
+
+.call_me {
+    background-color: #bedb39;
+    padding-top: 27px;
+    border-radius: 50%;
+    text-align: center;
+    width: 95px;
+    height: 95px;
+    top: 7px;
+    position: absolute;
+    transition: all 1.5s;
+}
+
+.li {
+    width: 500px;
+}
+
+/*Menu after Scroll up*/
+.header_mbl {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    z-index: 99;
+}
+
+.nav_after_scroll_down{
+    position: absolute;
+    top: 57px;
+}
+.call_me_after_scroll_down{
+    background-color: #bedb39;
+    padding-top: 27px;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    top: 4px;
+    position: absolute;
+}
+
+.header_after_scroll_down{
+    background-color: #fff;
+    width: 100%;
+    top: -110px;
+    position: fixed;
+    margin-top: 0;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    transition: all .7s;
+}
+
+/* Mobile Version */
+@media only screen and (max-width: 480px) {
+    .main{
+        padding-top: 100px;
+    }
+    .dark_layer{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.3;
+        display: none;
+        z-index: -1;
+    }
+    .header_mbl {
+        position: fixed;
+        width: 100%;
+        height: 80px;
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        z-index: 99;
+    }
+
+    .logo {
+        top: 25px;
+        right: 70px;
+        position: absolute;
+        width: 120px;
+    }
+
+    .menu_mbl {
+        background: rgba(250, 250, 250, 1);
+        border: 2px #e5e5e5 solid;
+        border-right: 0px;
+        width: 300px;
+        padding: 5% 20px;
+        position: fixed;
+        right: -300px;
+        top: 160px;
+        z-index: 100;
+        transition: all 0.5s;
+        font-size: 25px;
+        color: #000;
+        line-height: 80px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .menu_btn {
+        background: url(http://localhost/stacademy/images/open-menu.png) no-repeat center center scroll;
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        right: 15px;
+        top: 23px;
+        content: '';
+        display: block;
+        cursor: pointer;
+    }
+    .menu_item:hover{
+        background-color: #aeaeae;
+        transition: all 1s;
+    }
+
+    .box_rotate90 {
+        -webkit-transform: rotate(-90deg); /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(-90deg); /* Firefox 3.5-15 */
+        -ms-transform: rotate(-90deg); /* IE 9 */
+        -o-transform: rotate(-90deg); /* Opera 10.50-12.00 */
+        transform: rotate(-90deg); /* Firefox 16+, IE 10+, Opera 12.50+ */
+    }
+
+    .box_transition90 {
+        -webkit-transition: all 0.3s ease-out; /* Chrome 1-25, Safari 3.2+ */
+        -moz-transition: all 0.3s ease-out; /* Firefox 4-15 */
+        -o-transition: all 0.3s ease-out; /* Opera 10.50–12.00 */
+        transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    }
+
+    .box_rotate0 {
+        -webkit-transform: rotate(0deg); /* Chrome, Safari 3.1+ */
+        -moz-transform: rotate(0deg); /* Firefox 3.5-15 */
+        -ms-transform: rotate(0deg); /* IE 9 */
+        -o-transform: rotate(0deg); /* Opera 10.50-12.00 */
+        transform: rotate(0deg); /* Firefox 16+, IE 10+, Opera 12.50+ */
+    }
+
+    .box_transition0 {
+        -webkit-transition: all 0.3s ease-out; /* Chrome 1-25, Safari 3.2+ */
+        -moz-transition: all 0.3s ease-out; /* Firefox 4-15 */
+        -o-transition: all 0.3s ease-out; /* Opera 10.50–12.00 */
+        transition: all 0.3s ease-out; /* Chrome 26, Firefox 16+, IE 10+, Opera 12.50+ */
+    }
+
+    .call_me {
+        font-size: 10px;
+        padding-top: 10px;
+        border-radius: 50%;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 15px;
+        top: 11px;
+    }
+}
+
+/******************/
+
+/*@media only screen and (max-width: 480px) {
+    .call_me{
+        font-size: 10px;
+        padding-top: 10px;
+        border-radius: 50%;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 36px;
+        top: 20px;
+    }
+}*/
+
+/*Bootstrap*/
+.navbar-default {
+    border-color: transparent !important;
+    background-color: transparent;
+!important;
+}
+
+.navbar {
+    border: none !important;
+}

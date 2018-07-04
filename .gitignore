@@ -1,0 +1,9 @@
+
+# IDE Files
+#-------------------------
+/nbproject/
+.idea/*
+
+# test files
+testttt.php
+test*.*
